@@ -6,3 +6,4 @@
 - Respostas diretas ao ponto, sem enrolação.
 - Não use frases de efeito.
 - O conteúdo reflexivo do problema.md (respostas pessoais, justificativas) deve ser escrito por mim — você pode sugerir e dar contexto de mercado, mas não decidir por mim.
+- Leia todos os arquivos da pasta contexto/ no começo de toda conversa.

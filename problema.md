@@ -25,3 +25,15 @@ Consigo entrevistar semanalmente a Camila, que é minha prima e concordou em par
 
 ## Por que eu escolhi
 Escolhi esse problema porque acompanhei de perto, através da Camila, a frustração de perder uma parceria remunerada por simples desorganização — não por falta de talento ou de audiência, mas por falta de uma ferramenta adequada ao tamanho do trabalho dela. Isso me mostrou uma lacuna real: ferramentas de CRM existentes são feitas para times de vendas, não para criadores individuais que negociam sozinhos. Tenho interesse profissional em construir produtos para o mercado de criadores de conteúdo, que considero um segmento em crescimento e ainda mal atendido por ferramentas simples, e por isso quero usar o semestre para validar e aprofundar esse problema com dados reais.
+
+## O resultado que eu quero
+Reduzir o tempo que a Camila gasta organizando propostas de 5-6 horas por semana para cerca de 1 hora por semana — apenas revisão rápida do status de cada parceria, sem precisar revirar DMs e e-mails antigos. Junto com isso, manter o critério já definido: tempo entre primeiro contato e parceria fechada caindo de 15 para 7 dias, e zero parcerias perdidas por falta de follow-up (hoje, em média 1 por mês).
+
+## O plano antes do prompt
+- **O que observar:** como as propostas chegam de fato (e-mail, DM do Instagram, DM do TikTok, WhatsApp), em que etapa cada uma trava hoje, e quanto tempo passa entre o contato inicial e a resposta da Camila.
+- **O que decidir:** que etapas do funil valem a pena mapear num primeiro momento (contato → negociação → contrato → entrega → pagamento) e qual formato de board é simples o suficiente para a Camila olhar em poucos minutos.
+- **O que executo sozinha:** montar e preencher o board de teste com as propostas reais da Camila durante o experimento, a partir do que ela me repassar.
+- **O que fica com a Camila:** a negociação de valores e a decisão final de aceitar ou recusar cada proposta — a ferramenta organiza e alerta, quem conversa com a marca e decide o preço continua sendo ela.
+
+## Primeiro experimento
+Nas próximas 5 propostas que chegarem para a Camila, vou registrar cada uma manualmente num board simples (planilha ou Notion) com as etapas contato → negociação → contrato → entrega → pagamento, preenchendo eu mesma a partir do que ela me repassar. O teste serve para ver se esse mapeamento básico já evita o problema de "proposta perdida numa DM" e se ajuda a comparar valores entre propostas concorrentes.

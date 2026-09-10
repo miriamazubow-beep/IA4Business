@@ -3,6 +3,8 @@
 ## Quem sofre
 Camila Duarte, criadora de conteúdo de lifestyle e maternidade no Instagram e TikTok (@camiladuarte, 95 mil seguidores no Instagram e 60 mil no TikTok), atua sozinha, sem agência, e concilia a produção de conteúdo com o cuidado de dois filhos pequenos em Belo Horizonte.
 
+Eu mesma também sofro com isso: sou influencer de wellness e lifestyle, já fechei parcerias com marcas, mas nunca usei nenhuma ferramenta de organização — faço tudo na mão, do mesmo jeito que a Camila. Por isso o projeto passou a valer tanto para ela quanto para mim: valido o problema com a Camila e mais duas criadoras da minha rede, e ao mesmo tempo uso a solução na minha própria rotina.
+
 ## Como é hoje
 Hoje a influencer que busca parcerias de marca geralmente:
 - Recebe propostas espalhadas por e-mail, DM do Instagram/TikTok e WhatsApp, sem um lugar único para acompanhar.
@@ -21,7 +23,7 @@ Com um jeito simples e centralizado de mapear cada parceria por etapa, a influen
 Critério de sucesso: reduzir de 15 dias (média atual, do primeiro contato até a assinatura do contrato) para 7 dias o tempo entre o primeiro contato e a parceria fechada, e eliminar por completo as parcerias perdidas por falta de follow-up (hoje, em média 1 por mês).
 
 ## Como eu tenho acesso
-Consigo entrevistar semanalmente a Camila, que é minha prima e concordou em participar como usuária-teste ao longo do semestre. Além dela, tenho acesso a mais duas criadoras de conteúdo da minha rede pessoal (uma de moda e outra de fitness, ambas também sem agência, entre 50 mil e 100 mil seguidores), com quem posso conversar quinzenalmente para validar se o problema se repete fora do caso da Camila.
+Consigo entrevistar semanalmente a Camila, que é minha prima e concordou em participar como usuária-teste ao longo do semestre. Além dela, tenho acesso a mais duas criadoras de conteúdo da minha rede pessoal (uma de moda e outra de fitness, ambas também sem agência, entre 50 mil e 100 mil seguidores), com quem posso conversar quinzenalmente para validar se o problema se repete fora do caso da Camila. E, como também sou influencer, tenho acesso direto ao meu próprio caso, sem precisar de entrevista.
 
 ## Por que eu escolhi
 Escolhi esse problema porque acompanhei de perto, através da Camila, a frustração de perder uma parceria remunerada por simples desorganização — não por falta de talento ou de audiência, mas por falta de uma ferramenta adequada ao tamanho do trabalho dela. Isso me mostrou uma lacuna real: ferramentas de CRM existentes são feitas para times de vendas, não para criadores individuais que negociam sozinhos. Tenho interesse profissional em construir produtos para o mercado de criadores de conteúdo, que considero um segmento em crescimento e ainda mal atendido por ferramentas simples, e por isso quero usar o semestre para validar e aprofundar esse problema com dados reais.

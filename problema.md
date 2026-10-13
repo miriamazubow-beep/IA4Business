@@ -39,3 +39,11 @@ Reduzir o tempo que a Camila gasta organizando propostas de 5-6 horas por semana
 
 ## Primeiro experimento
 Nas próximas 5 propostas que chegarem para a Camila, vou registrar cada uma manualmente no Notion, com as etapas contato → negociação → contrato → entrega → pagamento, preenchendo eu mesma a partir do que ela me repassar. Critério de sucesso do experimento: zero propostas esquecidas entre as 5 testadas.
+
+## Métrica
+
+| Métrica | Alvo | Como confiro |
+|---|---|---|
+| Dias entre o primeiro contato da marca e o contrato fechado | De 15 dias para 7 dias até 30/11/2026 | Toda segunda-feira, eu comparo `data_contato` e `data_contrato` das parcerias fechadas na fonte (`dados/fonte.md`) e leio a média no `painel.html` |
+
+O ponto de partida (15 dias) é a estimativa da Camila registrada acima. A fonte hoje tem dado fictício de treino; a primeira medição real depende de registrar as propostas de verdade (ver FALTA DEFINIR no `dados/fonte.md`).

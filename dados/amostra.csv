@@ -1,0 +1,16 @@
+id,data_contato,marca,categoria,canal,etapa,situacao,data_contrato,dias_sem_resposta,exclusividade,valor
+PAR-001,2026-09-01,Marca A,skincare,e-mail,pagamento,fechada,2026-09-12,0,não,800
+PAR-002,2026-09-01,Marca B,suplemento,DM Instagram,contrato,fechada,2026-09-18,0,não,500
+PAR-003,2026-08-28,Marca C,roupa fitness,e-mail,entrega,fechada,2026-09-08,0,não,1200
+PAR-004,2026-09-09,Marca D,cosmético,DM Instagram,contato,recusada,,0,não,300
+PAR-005,2026-09-05,Marca E,app de bem-estar,e-mail,contrato,fechada,2026-09-21,0,não,600
+PAR-006,2026-09-14,Marca F,roupa fitness,WhatsApp,negociação,em aberto,,4,não,900
+PAR-007,2026-09-16,Marca G,produto natural,DM Instagram,contato,em aberto,,9,não,650
+PAR-008,2026-09-18,Marca H,suplemento,e-mail,negociação,em aberto,,2,não,700
+PAR-009,2026-09-20,Marca I,skincare,DM TikTok,contato,em aberto,,3,não,400
+PAR-010,2026-09-22,Marca J,app de saúde mental,e-mail,contato,em aberto,,1,não,450
+PAR-011,2026-09-10,Marca K,cuidado pessoal,DM Instagram,contato,perdida,,21,não,400
+PAR-012,2026-09-24,Marca L,produto orgânico,WhatsApp,negociação,em aberto,,5,não,1000
+PAR-013,2026-09-25,Marca M,roupa fitness,e-mail,contato,em aberto,,6,não,550
+PAR-014,2026-09-12,Marca N,suplemento,e-mail,contrato,fechada,2026-09-29,0,não,1100
+PAR-015,2026-09-28,Marca O,skincare,DM Instagram,contato,em aberto,,3,não,350

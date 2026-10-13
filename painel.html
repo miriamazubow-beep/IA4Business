@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de parcerias</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 24px 16px; background: #f4f5f9; color: #12264f; }
+  main { max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 32px 0 8px; }
+  .periodo { color: #5a6478; margin: 0 0 20px; font-size: 14px; }
+  .aviso { background: #fff6e0; border: 1px solid #e0b040; border-radius: 8px; padding: 10px 14px; font-size: 14px; margin-bottom: 20px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .card { background: #12264f; color: #fff; border-radius: 12px; padding: 18px; }
+  .card .rotulo { font-size: 13px; color: #e0b040; text-transform: uppercase; letter-spacing: .04em; }
+  .card .numero { font-size: 34px; font-weight: 700; margin: 6px 0; }
+  .card .regra { font-size: 12px; color: #c9d1e3; }
+  .rolagem { overflow-x: auto; background: #fff; border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #e3e6ee; white-space: nowrap; }
+  th { background: #12264f; color: #e0b040; }
+  footer { margin-top: 28px; font-size: 12px; color: #5a6478; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Painel de parcerias</h1>
+  <p class="periodo">Propostas com primeiro contato entre 28/08/2026 e 28/09/2026 · situação em 01/10/2026</p>
+  <div class="aviso">Dados fictícios de treino (Marca A a Marca O). Não é o meu histórico real. Ver <code>dados/fonte.md</code>.</div>
+
+  <div class="cards">
+    <div class="card"><div class="rotulo">Propostas em aberto</div><div class="numero" id="n1"></div><div class="regra">linhas com situacao = "em aberto"</div></div>
+    <div class="card"><div class="rotulo">Valor fechado</div><div class="numero" id="n2"></div><div class="regra">soma de valor das linhas com situacao = "fechada"</div></div>
+    <div class="card"><div class="rotulo">Dias do contato ao contrato</div><div class="numero" id="n3"></div><div class="regra">média de (data_contrato − data_contato) das fechadas</div></div>
+  </div>
+
+  <h2>Linhas que geram "Propostas em aberto"</h2>
+  <div class="rolagem"><table id="t1"></table></div>
+
+  <h2>Linhas que geram "Valor fechado" e "Dias do contato ao contrato"</h2>
+  <div class="rolagem"><table id="t2"></table></div>
+
+  <footer>
+    Fonte: <code>dados/amostra.csv</code> (15 linhas), com as regras de cálculo de <code>dados/fonte.md</code>.<br>
+    Última atualização dos dados: 01/10/2026. Painel gerado em 01/10/2026.
+  </footer>
+</main>
+
+<script>
+// Cópia de dados/amostra.csv embutida para o painel abrir sem internet.
+const CSV = `id,data_contato,marca,categoria,canal,etapa,situacao,data_contrato,dias_sem_resposta,exclusividade,valor
+PAR-001,2026-09-01,Marca A,skincare,e-mail,pagamento,fechada,2026-09-12,0,não,800
+PAR-002,2026-09-01,Marca B,suplemento,DM Instagram,contrato,fechada,2026-09-18,0,não,500
+PAR-003,2026-08-28,Marca C,roupa fitness,e-mail,entrega,fechada,2026-09-08,0,não,1200
+PAR-004,2026-09-09,Marca D,cosmético,DM Instagram,contato,recusada,,0,não,300
+PAR-005,2026-09-05,Marca E,app de bem-estar,e-mail,contrato,fechada,2026-09-21,0,não,600
+PAR-006,2026-09-14,Marca F,roupa fitness,WhatsApp,negociação,em aberto,,4,não,900
+PAR-007,2026-09-16,Marca G,produto natural,DM Instagram,contato,em aberto,,9,não,650
+PAR-008,2026-09-18,Marca H,suplemento,e-mail,negociação,em aberto,,2,não,700
+PAR-009,2026-09-20,Marca I,skincare,DM TikTok,contato,em aberto,,3,não,400
+PAR-010,2026-09-22,Marca J,app de saúde mental,e-mail,contato,em aberto,,1,não,450
+PAR-011,2026-09-10,Marca K,cuidado pessoal,DM Instagram,contato,perdida,,21,não,400
+PAR-012,2026-09-24,Marca L,produto orgânico,WhatsApp,negociação,em aberto,,5,não,1000
+PAR-013,2026-09-25,Marca M,roupa fitness,e-mail,contato,em aberto,,6,não,550
+PAR-014,2026-09-12,Marca N,suplemento,e-mail,contrato,fechada,2026-09-29,0,não,1100
+PAR-015,2026-09-28,Marca O,skincare,DM Instagram,contato,em aberto,,3,não,350`;
+
+const [cabecalho, ...linhas] = CSV.split("\n").map(l => l.split(","));
+const dados = linhas.map(l => Object.fromEntries(cabecalho.map((c, i) => [c, l[i]])));
+
+const abertas = dados.filter(d => d.situacao === "em aberto");
+const fechadas = dados.filter(d => d.situacao === "fechada");
+const dias = d => Math.round((new Date(d.data_contrato) - new Date(d.data_contato)) / 86400000);
+const valorFechado = fechadas.reduce((s, d) => s + Number(d.valor), 0);
+const mediaDias = fechadas.reduce((s, d) => s + dias(d), 0) / fechadas.length;
+
+document.getElementById("n1").textContent = abertas.length;
+document.getElementById("n2").textContent = "R$ " + valorFechado.toLocaleString("pt-BR");
+document.getElementById("n3").textContent = mediaDias.toFixed(1).replace(".", ",");
+
+function tabela(id, colunas, itens) {
+  const t = document.getElementById(id);
+  t.innerHTML = "<tr>" + colunas.map(c => `<th>${c[0]}</th>`).join("") + "</tr>" +
+    itens.map(d => "<tr>" + colunas.map(c => `<td>${c[1](d)}</td>`).join("") + "</tr>").join("");
+}
+tabela("t1", [["id", d => d.id], ["marca", d => d.marca], ["categoria", d => d.categoria], ["canal", d => d.canal],
+  ["etapa", d => d.etapa], ["dias sem resposta", d => d.dias_sem_resposta], ["valor proposto", d => "R$ " + d.valor]], abertas);
+tabela("t2", [["id", d => d.id], ["marca", d => d.marca], ["etapa", d => d.etapa], ["contato", d => d.data_contato],
+  ["contrato", d => d.data_contrato], ["dias", d => dias(d)], ["valor", d => "R$ " + d.valor]], fechadas);
+</script>
+</body>
+</html>
